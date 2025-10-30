@@ -232,6 +232,7 @@
 			};
 
 			partition@40000 {
+				compatible = "nvmem-cells";
 				reg = <0x40000 0xc0000>;
 				label = "factory";
 				read-only;
@@ -243,6 +244,7 @@
 
 					eeprom_factory_0: eeprom@0 {
 						reg = <0x0 0x1000>;
+						#nvmem-cell-cells = <1>;
 					};
 
 					macaddr_factory_4: macaddr@4 {
