@@ -625,6 +625,11 @@ config HW_RANDOM_ROCKCHIP
 
 	  If unsure, say Y.
 
+config HW_RANDOM_RNG90
+	tristate "Microchip RNG90 Random Number Generator Driver"
+	depends on I2C
+	depends on HW_RANDOM
+
 config HW_RANDOM_XILINX
 	tristate "Support for Xilinx True Random Generator"
 	depends on ZYNQMP_FIRMWARE || COMPILE_TEST
