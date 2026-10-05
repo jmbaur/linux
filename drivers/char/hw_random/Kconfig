@@ -625,6 +625,18 @@ config HW_RANDOM_ROCKCHIP
 
 	  If unsure, say Y.
 
+config HW_RANDOM_RNG90
+	tristate "Microchip RNG90 Random Number Generator Driver"
+	depends on I2C
+	help
+	  This driver provides kernel-side support for the Microchip RNG90,
+	  an I2C-attached random number generator.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called rng90.
+
+	  If unsure, say N.
+
 config HW_RANDOM_XILINX
 	tristate "Support for Xilinx True Random Generator"
 	depends on ZYNQMP_FIRMWARE || COMPILE_TEST
