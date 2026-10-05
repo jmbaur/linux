@@ -310,6 +310,8 @@ properties:
           - microchip,mcp4019-502
             # Microchip 7-bit Single I2C Digital POT (50k)
           - microchip,mcp4019-503
+            # Microchip RNG90 I2C random number generator
+          - microchip,rng90
             # PWM Fan Speed Controller With Fan Fault Detection
           - microchip,tc654
             # PWM Fan Speed Controller With Fan Fault Detection
